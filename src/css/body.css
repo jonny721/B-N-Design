@@ -1,0 +1,57 @@
+.tamaño{
+    min-height: 85vh;    
+}
+
+.loader{
+    width: 100%;
+    min-height: 85vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-button{
+    text-align: right;
+}
+
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-container table {
+  min-width: 600px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-container table {
+    min-width: 600px;
+  }
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-left: 0; /* Remove any default padding that might interfere */
+  }
+
+  .button-space {
+    width: 100%;
+  }
+}
+
+.center{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

@@ -1,5 +1,4 @@
-.product-image {
-  width: 250px;
+.product-image {  
   height: 250px;
   object-fit: cover;
   border-radius: 4px;

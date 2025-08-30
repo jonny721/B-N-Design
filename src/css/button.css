@@ -1,0 +1,20 @@
+.button-space{
+    margin: 30px;   
+}
+
+.button-space.btn-sm {
+    max-width: 200px; /* Límite máximo de ancho */
+    margin: 0
+    n; /* Centrar los botones */
+    padding: 0.25rem 0.5rem; /* Reducir padding */
+    font-size: 0.875rem; /* Tamaño de fuente ajustado */
+  }
+
+
+/* Opcional: Restaurar tamaño en escritorio */
+@media (min-width: 769px) {
+  .button-space.btn-sm {
+    padding: 0.375rem 0.75rem; /* Tamaño por defecto de btn-sm */
+    font-size: 1rem;
+  }
+}

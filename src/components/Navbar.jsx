@@ -3,8 +3,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import CartWidget from "./CartWidget";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 const NavbarPrincipal = () => {
+  const {cart} = useContext(CartContext)
   return (
     <>
       <Navbar bg="light" data-bs-theme="light">
@@ -41,7 +44,9 @@ const NavbarPrincipal = () => {
               Comedor
             </Nav.Link>
           </Nav>
-          <CartWidget />
+          
+          {cart.length > 0  && <NavLink to={`/cart`}><CartWidget /></NavLink>}
+          
         </Container>
       </Navbar>
     </>
